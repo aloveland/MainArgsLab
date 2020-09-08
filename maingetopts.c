@@ -27,7 +27,6 @@ struct Options get_opts(int count, char* args[]) {
        switch (opt) {
            case 'h': opts.using_h = true; break;
            case 'a': opts.using_a = true; break;
-3
            case 'd': opts.using_d = true; break;
            case 'f':
                opts.using_f = true;
