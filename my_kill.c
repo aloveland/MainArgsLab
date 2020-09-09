@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
  if (status == -1) {
      fprintf(stderr, "Value of errno: %d\n", errno);
      perror("Error printed by perror");
-     fprintf(stderr, "Error killing process: %d\n", strerror( errno));
+     fprintf(stderr, "Error killing process: %s\n", strerror( errno));
    }
  }
 
