@@ -6,6 +6,7 @@ int main(int argc, char *argv[]) {
         exit(-1);
   }
   printf("my_kill pid: %d\n", getpid());
+  pid_to_kill = argv[1];
   int status = kill(pid_to_kill, SIGINT);
  int errnum = errno;
  if (status == -1) {
